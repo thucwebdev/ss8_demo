@@ -10,7 +10,7 @@ typedef struct {
 int main() {
     // Khởi tạo sẵn 3 sinh viên mẫu
     Student students[3] = {
-        {1, "Nguyen Van A", 20, 3.5},
+        {1, "Nguyen Van D", 20, 3.5},
         {2, "Tran Thi B",   19, 3.8},
         {3, "Le Van C",     21, 2.9}
     };
