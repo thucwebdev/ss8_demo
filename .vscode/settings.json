@@ -1,0 +1,16 @@
+{
+    "C_Cpp.default.compilerPath": "gcc",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "files.associations": {
+        "*.c": "c"
+    },
+    "code-runner.executorMap": {
+        "c": "cd $dir ; if ($?) { gcc $fileName -o $fileNameWithoutExt.exe } ; if ($?) { & \".\\$fileNameWithoutExt.exe\" }"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.terminalRoot": "/",
+    "code-runner.preserveFocus": false
+}
+

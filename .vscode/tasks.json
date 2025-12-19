@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"],
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": ["-Command"]
+                    }
+                }
+            }
+        },
+        {
+            "label": "build and run",
+            "type": "shell",
+            "command": "gcc ${file} -o ${fileDirname}\\${fileBasenameNoExtension}.exe ; if ($?) { ${fileDirname}\\${fileBasenameNoExtension}.exe }",
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"],
+            "windows": {
+                "options": {
+                    "shell": {
+                        "executable": "powershell.exe",
+                        "args": ["-Command"]
+                    }
+                }
+            }
+        }
+    ]
+}
+
